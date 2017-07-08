@@ -26,7 +26,8 @@
     "test:e2e": "mocha ../test/e2e/*.js --reporter spec",
     "configure:rolearn:dev": "node ./npm-scripts/configure-role-arn.js --stage=dev",
     "iam:trust:dev": "node ./npm-scripts/iam-trust.js --stage=dev",
-    "open:amz": "node ./npm-scripts/open-amazon.js"
+    "open:amz": "node ./npm-scripts/open-amazon.js",
+    "start": "trap 'kill %1' SIGINT;  webpack --watch & bst proxy lambda .webpack/main.js"
   },
   "dependencies": {
     "alexa-sdk": "^1.0.8",
