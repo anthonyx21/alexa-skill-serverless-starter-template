@@ -47,7 +47,7 @@
     "serverless-dynamodb-local": "^0.2.22",
     "serverless-offline": "^3.15.0",
     "serverless-plugin-simulate": "0.0.17",
-    "serverless-webpack": "^2.0.0",
+    "serverless-webpack": "^1.0.0-rc.4",
     "synchronize": "alexeypetrushin/synchronize",
     "urldecode": "^1.0.1",
     "webpack-node-externals": "^1.6.0"
