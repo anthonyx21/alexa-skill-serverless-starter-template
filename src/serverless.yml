@@ -7,7 +7,7 @@ package:
     - npm-scripts/**
     - s3-cors.json
     - config/dev.skill.config.json
-    - config/prod.skill.config.json    
+    - config/prod.skill.config.json
     # remove node modules only needed for npm scripts
     - node_modules/attrs.argv/**
     - node_modules/cp/**
@@ -25,12 +25,17 @@ provider:
   profile: ${self:custom.profiles.${self:provider.stage}}
   memorySize: 128
 
+plugins:
+  - serverless-webpack
+
 custom:
   skillNamespace: YOUR_NAMESPACE
   defaultStage: dev
   profiles:
     dev: ${self:custom.skillNamespace}-profile-dev
     prod: ${self:custom.skillNamespace}-profile-prod
+  webpackIncludeModules:
+    packagePath: './package.json'
 
 functions:
   skill:
@@ -38,7 +43,7 @@ functions:
     role:
       'Fn::GetAtt': [ lambdaRole, Arn ]
     events:
-      - alexaSkill 
+      - alexaSkill
 
 resources:
   Resources:
