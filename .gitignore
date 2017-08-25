@@ -46,6 +46,7 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
+/src/.webpack
 /src/.serverless
 /deploy-s3/translations.json
 /src/config/skill.config.json
