@@ -6,7 +6,7 @@ module.exports = {
    externals: [nodeExternals()],
    output: {
       libraryTarget: 'commonjs',
-      path: '.webpack',
+      path: process.cwd() + '/.webpack',
       filename: 'main.js', // this should match the first part of function handler in serverless.yml
    },
    module: {

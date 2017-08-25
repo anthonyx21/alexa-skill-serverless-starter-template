@@ -37,20 +37,21 @@
   "devDependencies": {
     "attrs.argv": "^0.2.0-a",
     "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "cp": "^0.2.0",
-    "json-loader": "^0.5.4",
+    "json-loader": "^0.5.7",
     "mocha": "^3.2.0",
     "npm-run-script": "0.0.4",
     "opn": "^4.0.2",
     "prompt": "^1.0.0",
-    "serverless-dynamodb-local": "^0.2.22",
-    "serverless-offline": "^3.15.0",
+    "serverless-dynamodb-local": "^0.2.25",
+    "serverless-offline": "^3.15.3",
     "serverless-plugin-simulate": "0.0.17",
-    "serverless-webpack": "^1.0.0-rc.4",
+    "serverless-webpack": "^2.2.2",
     "synchronize": "alexeypetrushin/synchronize",
     "urldecode": "^1.0.1",
+    "webpack": "^3.5.5",
     "webpack-node-externals": "^1.6.0"
   }
 }
